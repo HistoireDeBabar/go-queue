@@ -1,11 +1,11 @@
-##### Queue
+#### Queue
 
 A queue library to store data, and interact with it in an
 first in, first out scenario.
 
 
 
-####### Using a Queue
+###### Using a Queue
 
 You can create and use a queue like so:
 
@@ -28,11 +28,8 @@ You can create and use a queue like so:
 
 ###### godoc
 
-`type Queue struct {}
-
-Queue Type for storing items in first in, first out order.
-
-func (q *Queue) Length() int
-func (q *Queue) Pop() (interface{}, error)
-func (q *Queue) Push(item interface{})
-`
+    type Queue struct {}
+    Queue Type for storing items in first in, first out order.
+    func (q *Queue) Length() int
+    func (q *Queue) Pop() (interface{}, error)
+    func (q *Queue) Push(item interface{})
