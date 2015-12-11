@@ -16,6 +16,8 @@ type Queue struct {
 }
 
 // Pop the item at the front of the queue.
+// returns an error when there are no items
+// in the queue.
 func (q *Queue) Pop() (interface{}, error) {
 	mutex.Lock()
 	defer mutex.Unlock()
